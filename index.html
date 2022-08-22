@@ -75,7 +75,28 @@
                     <button id="select-btn9" class="bg-blue-800 text-xl text-white py-2 px-8 text-center mx-20 mt-6">Select</button>
                 </div>
             </div>
-            
+            <div class="w-3/12">
+                <aside class="bg-gray-600">
+                    <h3 class="text-center text-white font-medium">Selected-V</h3>
+                    <ol id="player-list" class="text-white p-4 list-decimal">
+                    
+                    </ol>
+                </aside>
+                <aside class="bg-gray-600 mt-6">
+                    <h3 class="text-center text-white font-medium">Budget</h3>
+    
+                    <label class="inline-block mt-2 px-4 text-white" for="">Per Player</label>
+                    <input id="player-price" class="w-4/12 mx-4" type="text">
+                    <button id="calculate-btn" class="block bg-blue-800 text-xl text-white py-2 px-8 text-center mx-auto mt-4 w-10/12">Calculate</button>
+                    <p class="p-4 text-white">Player Expenses<span id="player-total" class="px-10">000</span></p>
+                    <label class="inline-block mt-2 px-4 text-white" for="">Manager</label>
+                    <input id="manager-price" class="w-4/12 mx-4" type="text">
+                    <label class="inline-block mt-2 px-4 text-white" for="">Coach</label>
+                    <input id="coach-price" class="w-4/12 mx-9" type="text">
+                    <button id="total-btn" class="block bg-blue-800 text-xl text-white py-2 px-8 text-center mx-auto mt-4 w-10/12">Calculate Total</button>
+                    <p class="p-4 text-white">Total<span class="px-24">00000000</span></p>
+                </aside>
+            </div>
         </main>
     </section>
     <script src="js/script.js"></script>
