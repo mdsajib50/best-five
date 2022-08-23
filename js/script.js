@@ -79,3 +79,23 @@ calculateBtn.addEventListener('click', function() {
     playerAmount = playerTotal.innerText = playerTotalPrice;
      
 })
+
+
+const totalBtn = document.getElementById('total-btn');
+
+totalBtn.addEventListener('click', function() {
+   
+    const managerPrice = document.getElementById('manager-price');
+
+    let managerPriceParse = parseInt(managerPrice.value);
+    managerPrice.value = '';
+    const coachPrice = document.getElementById('coach-price');
+
+    let coachPriceParse = parseInt(coachPrice.value);
+    coachPrice.value = '';
+    let totalAmount = playerAmount + managerPriceParse + coachPriceParse;
+
+    const total = document.getElementById('total');
+
+    total.innerText = totalAmount;
+})
