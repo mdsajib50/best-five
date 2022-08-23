@@ -25,6 +25,3 @@ function player(elementId, playerId, playerListId){
         }
 }
 
-function validator(params) {
-    
-}
