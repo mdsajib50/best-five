@@ -65,3 +65,17 @@ selectBtn9.addEventListener('click', function() {
 })
 
 
+const calculateBtn = document.getElementById('calculate-btn');
+let playerAmount;
+calculateBtn.addEventListener('click', function() {
+   let playerPrice = document.getElementById('player-price');
+    
+    const playerPriceParse = parseInt(playerPrice.value);
+    playerPrice.value ='';
+
+    let playerTotalPrice = playerPriceParse * parseInt(playerList.children.length);
+
+    const playerTotal = document.getElementById('player-total');
+    playerAmount = playerTotal.innerText = playerTotalPrice;
+     
+})
